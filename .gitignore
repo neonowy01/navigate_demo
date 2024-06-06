@@ -1,0 +1,6 @@
+_bakeresourcecache/
+*bakeresourcecache.vpk
+_buildcubemaps/
+addon_template_addon_resources.vrman
+addon_template_soundevents.vsndevts
+deploy_demo.vmap

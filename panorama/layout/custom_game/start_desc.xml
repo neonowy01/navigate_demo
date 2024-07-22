@@ -1,0 +1,13 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/text_styles.css" />
+	</styles>
+	<ClientUIDialogPanel class="RootPanel">
+		<Panel class="StartDesc">
+			<Label class="header" text="WELCOME TO NAVIGATE DEMO"/>
+			<Label class="desc" text="The Combine Soldier will follow your position."/>
+			<Label class="desc" text="Steer the soldier and clear all the sectors by eliminating the threats in order to complete the mission"/>
+		</Panel>
+	</ClientUIDialogPanel>
+</root>

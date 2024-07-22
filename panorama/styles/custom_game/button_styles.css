@@ -1,0 +1,36 @@
+.Button {
+	width:100%;
+	height:100%;
+	text-align: center;
+	border: 5px solid #3dfdfc;
+	font-family: raju;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+Label {
+	width:100%;
+	height:100%;
+	font-size:100;
+	text-align: center;
+	color:#3dfdfcff;
+	padding-top: -12.5%;
+	text-shadow:0px 0px 2 black;
+	opacity: 1;
+	}
+
+Label:hover {
+	background-color:#3dfdfcff;
+	color: white;
+	text-shadow:none;
+}
+
+Label:active {
+	background-color:white;
+	color: white;
+	text-shadow:none;
+}
+
+.Hide {
+	opacity:0;
+}

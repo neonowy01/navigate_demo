@@ -1,0 +1,31 @@
+.StartDesc{
+	width:100%;
+	height:100%;
+	text-overflow:clip;
+	flow-children:down;
+	font-family: raju;
+	transition-property: opacity;
+	transition-duration: 1s;
+
+}
+
+.header{
+	color:#3dfdfcff;
+	text-align: center;
+	width:100%;
+	font-size:200px;
+	font-weight: bold;
+	text-shadow:0px 0px 5 black;
+}
+
+.desc {
+	color:white;
+	text-align: center;
+	width:100%;
+	font-size:150px;
+	text-shadow:0px 0px 5 black;
+}
+
+.Hide {
+	opacity:0;
+}

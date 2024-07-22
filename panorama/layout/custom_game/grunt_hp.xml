@@ -1,0 +1,13 @@
+<root>
+	<scripts>
+		<!--<include src="file://{resources}/scripts/custom_game/grunt_hp.js" />-->
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c"/>
+		<!--<include src="file://{resources}/styles/custom_game/grunt_hp.css"/>-->
+	</styles>
+	<Panel>
+		<Image src="grunt_portrait.png"/>
+		<Label id="HealthPoints" text="75"/>
+	</Panel>
+</root>

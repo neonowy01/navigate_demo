@@ -1,0 +1,12 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/buttons.js" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/button_styles.css"/>
+	</styles>
+	<ClientUIDialogPanel class="Button" onactivate="Clicked()" onmouseover="HoverSound()">
+		<Label text="Begin the Mission"/>
+	</ClientUIDialogPanel>
+</root>

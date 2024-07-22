@@ -1,0 +1,23 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/buttons.js" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/text_styles.css"/>
+		<include src="file://{resources}/styles/custom_game/button_styles.css"/>
+	</styles>
+	<Panel class="EndUI">
+		<Label class="header" text="MISSION COMPLETED" />
+		<Panel class="ButtonContainer">
+			<Panel class="Button" onactivate="Restart()" onmouseover="HoverSound()">
+				<Label text="Play Again"/>
+			</Panel>
+		</Panel>
+		<Panel class="ButtonContainer">
+			<Panel class="Button" onactivate="Exit()" onmouseover="HoverSound()">
+				<Label text="Exit to Main Menu"/>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

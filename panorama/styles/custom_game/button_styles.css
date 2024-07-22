@@ -8,7 +8,7 @@
 	transition-duration: 1s;
 }
 
-Label {
+.Button Label {
 	width:100%;
 	height:100%;
 	font-size:100;
@@ -19,13 +19,13 @@ Label {
 	opacity: 1;
 	}
 
-Label:hover {
+.Button Label:hover {
 	background-color:#3dfdfcff;
 	color: white;
 	text-shadow:none;
 }
 
-Label:active {
+.Button Label:active {
 	background-color:white;
 	color: white;
 	text-shadow:none;
@@ -33,4 +33,17 @@ Label:active {
 
 .Hide {
 	opacity:0;
+}
+
+.EndUI {
+	width:100%;
+	height:100%;
+	flow-children:down;
+}
+
+.ButtonContainer{
+	width:50%;
+	margin-left:25%;
+	height:13%;
+	margin-bottom:5%;
 }

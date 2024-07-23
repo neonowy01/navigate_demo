@@ -1,0 +1,9 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c"/>
+		<include src="file://{resources}/styles/custom_game/text_styles.css" />
+	</styles>
+	<Panel class="CreditsPanel">
+		<Label class="credits" text="Made by "/><Label class="credits bluetext" text="Neon"/>
+	</Panel>
+</root>

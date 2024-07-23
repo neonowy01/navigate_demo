@@ -29,3 +29,20 @@
 .Hide {
 	opacity:0;
 }
+
+.CreditsPanel {
+	flow-children:right;
+}
+.credits{
+	height:100%;
+	font-family: raju;
+	font-size:200px;
+	text-shadow:0px 0px 5 black;
+	color:white;
+
+}
+
+.bluetext
+{
+	color:#3dfdfcff;
+}

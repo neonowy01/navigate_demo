@@ -1,0 +1,19 @@
+Label {
+	width:100%;
+	height:100%;
+	font-size:1000px;
+	font-family: raju;
+	text-shadow:0px 0px 10 black;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	line-height:600px;
+}
+
+.sectorpanel {
+	transition-property: opacity;
+	transition-duration: 2s;
+}
+.Hide {
+	opacity: 0;
+}

@@ -1,0 +1,9 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/sector_styles.css" />
+	</styles>
+	<Panel class="sectorpanel">
+		<Label text="Sector Charlie"/>
+	</Panel>	
+</root>

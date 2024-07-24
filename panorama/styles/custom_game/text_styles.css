@@ -33,6 +33,16 @@
 .CreditsPanel {
 	flow-children:right;
 }
+.StatsPanel {
+	flow-children:down;
+	width:100%;
+	height:100%;
+}
+.StatsPanel Label {
+	width:100%;
+	height:50%;
+	font-size:150px;
+}
 .credits{
 	height:100%;
 	font-family: raju;

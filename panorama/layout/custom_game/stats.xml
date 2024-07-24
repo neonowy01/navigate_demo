@@ -1,0 +1,10 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c"/>
+		<include src="file://{resources}/styles/custom_game/text_styles.css" />
+	</styles>
+	<Panel class="StatsPanel">
+		<Label class="credits" text="Time: YY:YY"/>
+		<Label class="credits" text="Soldier Deaths: X"/>
+	</Panel>
+</root>

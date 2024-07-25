@@ -18,7 +18,6 @@ function UpdateHealth()
 		if Josh:IsAlive() == true 
 			then
 				OutputValues["JoshHP"] = DoubleDigits(Josh:GetHealth())
-				print(OutputValues["JoshHP"])
 				SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
 				return 0.1
 			else	

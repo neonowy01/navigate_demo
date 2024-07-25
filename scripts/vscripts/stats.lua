@@ -5,6 +5,49 @@ a = "Time"
 OutputValues[a] = "00:00"
 b = "SoldierDeaths"
 OutputValues[b] = 0
+c = "JoshHP"
+OutputValues[c] = 70
+
+
+function Activate()
+	Josh = Entities:FindByName(nil, "Josh")
+	thisEntity:SetThink(UpdateHealth, "HealthThink",0)
+end
+
+function UpdateHealth()
+		if Josh:IsAlive() == true 
+			then
+				OutputValues["JoshHP"] = DoubleDigits(Josh:GetHealth())
+				print(OutputValues["JoshHP"])
+				SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
+				return 0.1
+			else	
+				StartCoolCountdown()
+				return nil
+		end
+end
+
+function StartCoolCountdown()
+	Countdown = 5
+	thisEntity:SetThink(CoolCountdown, "CountDownThink", 0)
+end
+
+function CoolCountdown()
+	OutputValues["JoshHP"] = DoubleDigits(Countdown)
+	SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
+	Countdown = Countdown - 1 
+	if Countdown < 0
+		then 
+			Entities:FindByName(nil, "josh_template"):ForceSpawn()
+			Josh = Entities:FindByName(nil, "Josh")
+			thisEntity:SetThink(UpdateHealth, "HealthThink",0)
+			return nil 
+		else
+			return 1
+
+	end
+
+end
 
 DeathCount = 0 
 function AddDeathCount()
@@ -34,3 +77,7 @@ function SendStatsToPanorama()
 	OutputValues["SoldierDeaths"] = DeathCount
 	SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
 end
+
+
+
+

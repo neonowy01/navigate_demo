@@ -6,8 +6,12 @@
 		<include src="s2r://panorama/styles/base_styles.vcss_c"/>
 		<include src="file://{resources}/styles/custom_game/hp.css"/>
 	</styles>
-	<Panel>
-		<Image src="grunt_portrait.png"/>
-		<Label id="HealthPoints" text="70"/>
+	<Panel class="main">
+		<Panel class="Icon">
+			<Image src="file://{images}/custom_game/skull.png"/>
+		</Panel>
+		<Panel class="HealthPanel">
+			<Label id="HealthPoints" text="70"/>
+		</Panel>
 	</Panel>
 </root>

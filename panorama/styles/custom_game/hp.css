@@ -2,18 +2,23 @@
 	width:100%;
 	height:100%;
 	flow-children:right;
+	transition-property: opacity;
+	transition-duration: 1s;
+	opacity:1;
 }
+
 .Icon{
-	width:25%;
+	padding:5px;
+	width:40%;
 	height:100%;
 }
 
 Image{
-	
+	img-shadow: 0px 0px 0px 5 black;
 }
 
 .HealthPanel{
-	width:75%;
+	width:50%;
 	height:100%;
 }
 
@@ -27,8 +32,25 @@ Label{
 	font-family: raju;
 	text-shadow:0px 0px 5 black;
 	color:#3dfdfcff;
+	margin-top: -10px;
+}
+
+.DeathIcon {
+	visibility: collapse;
 }
 
 .Countdown Label {
 	color:lightcoral;
 }
+
+.Countdown .DeathIcon {
+	visibility: visible;
+}
+
+.Hide 
+{
+	opacity: 0;
+}
+
+
+

@@ -7,6 +7,9 @@ b = "SoldierDeaths"
 OutputValues[b] = 0
 c = "JoshHP"
 OutputValues[c] = 70
+d = "ReviverHP"
+OutputValues[c] = 40
+
 
 
 function Activate()
@@ -58,7 +61,6 @@ function GetTime(fTime)
 	Minutes = DoubleDigits(math.floor(iTime/60))
 	Seconds = DoubleDigits(iTime - Minutes*60)
 
-	print(Minutes..":"..Seconds)
 	return Minutes..":"..Seconds
 end
 
@@ -77,6 +79,26 @@ function SendStatsToPanorama()
 	SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
 end
 
+function ReviverSpawned()
+	thisEntity:SetThink(ReviverThink, "ReviverThink",0)
+	Reviver = Entities:FindByName(nil, "s5_reviver")
+end
 
+function ReviverThink()
+	OutputValues["ReviverHP"] = Reviver:GetHealth()
+	
+	if OutputValues["ReviverHP"] > 0
+		then 
+			SendStatsToPanorama()
+			return 0.1
+	else 
+		OutputValues["ReviverHP"] = 0
+		return nil
+	end
+end
 
-
+function ForceStopThinks()
+	SendToConsole("@panorama_dispatch_event AddStyle(\'"..json.encode(OutputValues).." \')")
+	thisEntity:StopThink("HealthThink")
+	thisEntity:StopThink("ReviverThink")
+end

@@ -8,10 +8,10 @@
 	</styles>
 	<Panel class="StatsPanel">
 		<Panel class="StatContainer">
-			<Image src="file://{images}/custom_game/skull.png"/><Label class="credits" id="Time" text="Time: YY:YY"/>
+			<Image src="file://{images}/custom_game/clock.png"/><Label class="credits" id="Time" text="Time: YY:YY"/>
 		</Panel>
 		<Panel class="StatContainer">
-			<Image src="file://{images}/custom_game/clock.png"/><Label class="credits" id="Deaths" text="Soldier Deaths: X"/>
+			<Image src="file://{images}/custom_game/skull.png"/><Label class="credits" id="Deaths" text="Soldier Deaths: X"/>
 		</Panel>
 	</Panel>
 

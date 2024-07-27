@@ -1,6 +1,6 @@
 <root>
 	<scripts>
-		<include src="file://{resources}/scripts/custom_game/grunt_hp.js" />
+		<include src="file://{resources}/scripts/custom_game/reviver_hp.js" />
 	</scripts>
 	<styles>
 		<include src="s2r://panorama/styles/base_styles.vcss_c"/>
@@ -8,11 +8,10 @@
 	</styles>
 	<Panel class="main">
 		<Panel class="Icon">
-			<Image class="DefaultIcon" src="file://{images}/custom_game/grunt.png"/>
-			<Image class="DeathIcon" src="file://{images}/custom_game/grunt_gray.png"/>
+			<Image src="file://{images}/custom_game/reviver_icon.png"/>
 		</Panel>
 		<Panel class="HealthPanel">
-			<Label id="HealthPoints" text="70"/>
+			<Label id="ReviverHealthPoints" text="40"/>
 		</Panel>
 	</Panel>
 </root>

@@ -35,6 +35,10 @@ Label{
 	margin-top: -10px;
 }
 
+#ReviverHealthPoints {
+	color:#ff4040ff;
+}
+
 .DeathIcon {
 	visibility: collapse;
 }
